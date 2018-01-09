@@ -1,0 +1,34 @@
+<div class="layout-wrapper" (click)="onWrapperClick()"
+    [ngClass]="{'layout-wrapper-static': layoutStatic,
+                'layout-wrapper-active': mobileMenuActive}">
+
+    <app-menu></app-menu>
+
+    <div class="layout-main">
+        <app-topbar></app-topbar>
+
+        <app-breadcrumb></app-breadcrumb>
+
+        <div class="layout-content">
+            <!--<router-outlet></router-outlet>-->
+          <div>
+            <div class="tab-style" *ngFor="let tab of tabs" (click)="selectTab(tab)" tabindex="0:" [ngClass]="{'active-tab': tab.showTab}">
+              {{tab.label}}
+              <i class="material-icons">close</i>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div *ngFor="let tab of tabs">
+              <app-users *ngIf="tab.type === 'users' && tab.showTab"></app-users>
+              <app-user *ngIf="tab.type === 'user' && tab.showTab" [id]="tab.userId"></app-user>
+              <app-calendar *ngIf="tab.type === 'calendar' && tab.showTab"></app-calendar>
+            </div>
+          </div>
+        </div>
+
+        <!--<app-footer></app-footer>-->
+        <!--<div class="layout-main-mask" *ngIf="mobileMenuActive"></div>-->
+    </div>
+
+</div>

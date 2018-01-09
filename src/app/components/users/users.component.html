@@ -1,0 +1,5 @@
+<p-dataTable [value]="data" selectionMode="single" [(selection)]="selectedCar" (onRowSelect)="select($event)" (ngModelChange)="select($event)">
+  <p-column field="position" header="position"></p-column>
+  <p-column field="name" header="name"></p-column>
+  <p-column field="weight" header="weight"></p-column>
+</p-dataTable>
