@@ -60,6 +60,7 @@ div.wrapper > div:nth-child(1) > app-users > mat-table > mat-header-row{
   border-bottom: 1px solid rgba(225, 225, 225, 1);
   border-top: 0px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 .tab-style{
   height: 30px;
@@ -78,7 +79,7 @@ div.wrapper > div:nth-child(1) > app-users > mat-table > mat-header-row{
   outline: none;
 }
 .tab-style:focus{
-  background: rgb(234, 235, 236);  
+  background: rgb(234, 235, 236);
 }
 .active-tab{
   border-bottom: 2px solid rgb(60, 66, 82);

@@ -7,14 +7,14 @@
     <div class="layout-main">
         <app-topbar></app-topbar>
 
-        <app-breadcrumb></app-breadcrumb>
+        <!--<app-breadcrumb></app-breadcrumb>-->
 
         <div class="layout-content">
             <!--<router-outlet></router-outlet>-->
           <div>
             <div class="tab-style" *ngFor="let tab of tabs" (click)="selectTab(tab)" tabindex="0:" [ngClass]="{'active-tab': tab.showTab}">
               {{tab.label}}
-              <i class="material-icons">close</i>
+              <i class="material-icons" (click)="removeTab(tab)">close</i>
             </div>
           </div>
 

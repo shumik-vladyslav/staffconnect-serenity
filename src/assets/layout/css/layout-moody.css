@@ -1304,7 +1304,7 @@ a {
   -webkit-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 0 6px rgba(0, 0, 0, 0.3);
-  background-image: url("../images/special/bg-moody-light.png");
+  /*background-image: url("../images/special/bg-moody-light.png");*/
   background-size: 240px 100%;
   background-repeat: no-repeat; }
   .layout-wrapper .layout-sidebar .sidebar-logo {
@@ -1338,7 +1338,7 @@ a {
     .layout-wrapper .layout-sidebar .sidebar-logo .app-name {
       color: #ffffff;
       vertical-align: middle;
-      font-size: 26px; }
+      font-size: 15px; }
   .layout-wrapper .layout-sidebar .layout-menu {
     list-style-type: none;
     margin: 10px 0 0 0;
